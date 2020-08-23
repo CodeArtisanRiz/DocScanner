@@ -4,11 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DocScanner</title>
+    <link rel="stylesheet" href="print.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="body" style="text-align: center;">
-    <button onclick="GFG_Fun()">Click here</button>
-
+<body style="text-align: center;">
+    <button onclick="Fun()" class="btn">Add Img</button>
+    <button onclick="Print()">Save PDF</button>
+    <button type="button" onclick="printJS('body', 'html')">
+        Print Form
+     </button>
+    <div id="body">
+        <!-- <form method="post" action="#" id="printJS-form">
+            
+        </form> -->
+    </div>
+    <script src="print.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
